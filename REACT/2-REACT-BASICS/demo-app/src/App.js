@@ -11,10 +11,9 @@ class App extends Component {
     console.log('App-component instantiated.');
   }
 
-  incrementTotalCount(e) {
-    console.log("Event Type- " + e.type);
+  incrementTotalCount(e,value) {
     this.setState({
-      totalCount: this.state.totalCount + 1
+      totalCount: this.state.totalCount + Number.parseInt(value)
     });
   }
 
@@ -29,14 +28,15 @@ class App extends Component {
         <div className="panel panel-default">
           <div className="panel-heading"> App Component - {totalCount}</div>
           <div className="panel-body">
-            <HitButton label="+1" onHit={(e) => { this.incrementTotalCount(e) }} />
-            <HitButton label="+10" onHit={(e) => { this.incrementTotalCount(e) }} />
-            <HitButton label="+100" onHit={(e) => { this.incrementTotalCount(e) }} />
-            <HitButton label="-1" onHit={(e) => { this.incrementTotalCount(e) }} />
-            <HitButton label="-10" onHit={(e) => { this.incrementTotalCount(e) }} />
-            <HitButton label="-100" onHit={(e) => { this.incrementTotalCount(e) }} />
-            <hr />
-            <TotalHitCountDisplay value={totalCount} />
+            <div>
+              <HitButton value="1" onHit={(e,value) => { this.incrementTotalCount(e,value) }} />
+              <HitButton value="-100" onHit={(e,value) => { this.incrementTotalCount(e,value) }} />
+              <HitButton value="100" onHit={(e,value) => { this.incrementTotalCount(e,value) }} />
+            </div>
+            <div style={{ clear: 'both' }}>
+              <hr />
+              <TotalHitCountDisplay value={totalCount} />
+            </div>
           </div>
         </div>
       </div>

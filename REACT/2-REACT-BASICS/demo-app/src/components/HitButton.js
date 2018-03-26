@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import './HitButton.css'
 class HitButton extends Component {
     constructor(props) {
         super(props);
@@ -10,21 +9,23 @@ class HitButton extends Component {
         //this.handleBtnClick = this.handleBtnClick.bind(this);
     }
     handleBtnClick(e) {
+        let { value, onHit } = this.props;
         this.setState({
-            count: this.state.count + 1
+            count: this.state.count + Number.parseInt(value)
         });
-        let onHit = this.props.onHit;
-        onHit(e); // Emitting event
+        onHit(e, value); // Emitting event
     }
     render() {
         console.log('HitButton-component rendered..');
-        let { label } = this.props;
+        let { value } = this.props;
         let { count } = this.state;
         return (
-            <div className="well hit-button">
-                <button onClick={(e) => { this.handleBtnClick(e) }} className="btn btn-danger">
-                    {label}   ==>  <span className="badge">{count}</span>
-                </button>
+            <div style={{ float: 'left' }}>
+                <div className="well">
+                    <button onClick={(e) => { this.handleBtnClick(e) }} className="btn btn-danger">
+                        {value}   =>  <span className="badge">{count}</span>
+                    </button>
+                </div>
             </div>
         );
     }
