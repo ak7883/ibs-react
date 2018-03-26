@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1> HTML/Web components</h1>
+    <hr/>
+
+    <div>
+        <input id="inp1" type="number" value="0" onchange="func()" />
+        <span id="count-display"></span>
+    </div>
+
+    <script>
+        let inp = document.getElementById('inp1');
+        let spanEle = document.getElementById('count-display');
+        let count = 0; // application state , loaded from server-side..
+        setInterval(() => {
+            count++;
+            inp.value = count;
+            var event = new CustomEvent('change');
+            inp.dispatchEvent(event);
+        }, 1000);
+        function func() {
+            spanEle.innerText = count;
+        }
+    </script>
+
+</body>
+
+</html>

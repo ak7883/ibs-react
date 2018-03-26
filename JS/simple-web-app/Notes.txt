@@ -2,9 +2,8 @@
 //--------------------------------------------
 content  ==> HTML
 style    ==> CSS
+behav    ==> javaScript
 ----------------------------------------------
-
-
 what .js-language can do on HTML-page in browser ?
 
     .js-lang can do any dynamic behva on HTML-page using
@@ -14,18 +13,17 @@ what .js-language can do on HTML-page in browser ?
 
 using DOM API
 --------------
+
  -> can create/retreive/update/delete HTML elements
  -> can change element's inner HTML/Text
  -> can change element's attribute/properties
  -> can change element's style 
  -> can validate form-fields
- -> can create rich UI compoenents
+ -> can create rich UI components
  -> ..............
-
 using XHR / fetch
 --------------------
  -> to communicate with server-side programs async 
-
 using Timer API
 ------------------
  -> to execute any action(s) on timeout/ time-interval
@@ -41,8 +39,7 @@ HTML5 API:
 
 
 
-
-problems with plain-js ( your-code with browser APIs)
+problems with plain-js ( your-.js-code with browser-APIs)
 -----------------------------------------------------
 
 

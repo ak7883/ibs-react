@@ -1,0 +1,18 @@
+
+
+HTML Tag/Element/Component  ==> UI
+
+
+
+HTMLXXXElement   ==> component-class
+<xxx />          ==> component-instance
+
+
+component
+
+    - props    ==> data/input from parent-component while instantiation
+    - state    ==> internal data
+
+        e.g <input />
+
+            state --> value
