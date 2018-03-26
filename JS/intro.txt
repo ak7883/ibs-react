@@ -1,0 +1,79 @@
+
+
+
+ Ref :  http://crockford.com/
+
+   ----------------------------------------------------------------------
+
+    .js-intro
+
+    -> scripting language for web pages in browser-envi( client-side )
+    -> sever-side programming lang on Node.js( Javascript Runtime )
+    -> Hybrid Mobile Native application
+
+    ----------------------------------------------------------------------
+
+    .js-features
+
+     -> FP & OOP
+     -> dynamic typed language 
+
+     -> single-threaded lang , but can execute concurrent actions
+     -> all IO operation .js language are non-blocking
+
+
+     ----------------------------------------------------------------------
+
+     ==> .js-lang syntax & core APIs are based on 'ECMAScript spec' 
+
+           - ECMAScript-2015 or ES6 ( widely used )  
+           - ES7
+
+    ----------------------------------------------------------------------
+
+    " Hello World "       
+
+    ----------------------------------------------------------------------
+
+    How to run .js program ?
+
+        ==> we need .js-runtime/engine 
+
+    browser-envi
+
+        -> chrome  : v8(c++)
+        -> firefox : rhino( java )
+        -> IE/Edge : chakra
+        -> safari  : nitro
+        .....
+
+    Other Envi
+
+        -> Node.js : v8      
+        -> JVM     : nashorn
+        ...
+
+    
+    ----------------------------------------------------------------------
+      
+        
+
+     JS-topics
+     ----------
+
+     1. data-types
+     2. execution-context / scopes
+     3. FP & OOP in javascript
+     4. 'this' keyword / context's owner
+     5. using prototypes
+     6. ES6 - New syntax
+     7. ES6-modules ( how to organize javascript code)
+     8. Concurrency Model with Event-Loop  ( callbacks, non-blocking IO , ...)
+     9. Async APIs ( Promise API, RxJS )
+     10. TypeScript language 
+
+     --------------------------------------------------
+
+
+
+

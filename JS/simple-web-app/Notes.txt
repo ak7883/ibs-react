@@ -1,0 +1,86 @@
+
+//--------------------------------------------
+content  ==> HTML
+style    ==> CSS
+----------------------------------------------
+
+
+what .js-language can do on HTML-page in browser ?
+
+    .js-lang can do any dynamic behva on HTML-page using
+    browser provider APIs ( i.e DOM , XHR, Timer , ....) based w3c recoomendations
+
+    all APIs are implelemented & abstracted as .js objects & functions
+
+using DOM API
+--------------
+ -> can create/retreive/update/delete HTML elements
+ -> can change element's inner HTML/Text
+ -> can change element's attribute/properties
+ -> can change element's style 
+ -> can validate form-fields
+ -> can create rich UI compoenents
+ -> ..............
+
+using XHR / fetch
+--------------------
+ -> to communicate with server-side programs async 
+
+using Timer API
+------------------
+ -> to execute any action(s) on timeout/ time-interval
+
+
+HTML5 API:
+
+ ref: https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5
+
+
+
+----------------------------------------------------------
+
+
+
+
+problems with plain-js ( your-code with browser APIs)
+-----------------------------------------------------
+
+
+    => browser compatibility issues
+    => performance issues ( i.e DOM Manupulation should be minimal)
+    => memory management issues ( i.e cleaning un-used DOM elements )
+    => data-binding is manual  
+    => code organization is difficult 
+
+    soln:
+
+    => using third-party's .js-library(s) & Framewok(s)
+
+
+        a. jQuery
+
+        MVC / MVVM based F.Ws
+
+        a. AngularJS
+        b. Backbone
+        c. Knockout
+        d. EmberJS
+        e. DOJO
+        f. ExtJS
+        ........
+
+        Component/Custom HTML-element based Lib & Framewoks  ( based on WebCompoent spec from W3C)
+
+        a. React
+        b. Angular  
+        c. Aurelia  ( based on standards , simple to use)
+        d. Polymer
+        e. Vue
+        ........  
+
+----------------------------------------------------------    
+
+
+
+
+

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>index</title>
+    <link href="./css/bootstrap.css" rel="stylesheet" />
+</head>
+<body>
+    
+    <div class="container">
+      <div class="page-header">Q</div>
+      <button id="teachBtn" class="btn btn-primary">Teach .js</button> 
+    </div>
+    
+    <script>
+        let tnr={name:'Nag'}
+        let service={
+            doTeach:function(){
+                console.log(this.name+" teaching .js");
+            }
+        }
+        let teachBtn=document.getElementById('teachBtn');
+        teachBtn.addEventListener('click',()=>service.doTeach.call(tnr));
+    </script>
+</body>
+</html>
