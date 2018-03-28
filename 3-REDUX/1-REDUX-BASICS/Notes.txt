@@ -1,0 +1,21 @@
+
+
+counter-ui-app / shopIT-UI
+---------------------------
+
+step-1 : Action(s)
+
+    - INCREMENT
+    - DECREMENT
+
+    - LOAD_PRODUCTS
+    - BUY
+    - ADD_NEW_REVIEW
+    ...
+
+
+step-2 : action creator(s)    
+
+step-3 : create reducer to produce new state then combine all as root-reducer
+
+step-4 : create store
